@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cat $1 | sed 's/ /\n/g' | sort | uniq -c | sort -n > pos_freq
+cat $2 | sed 's/ /\n/g' | sort | uniq -c | sort -n > neg_freq
+
